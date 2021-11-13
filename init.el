@@ -1,21 +1,20 @@
 ;;; init.el --- -*- lexical-binding: t -*-
 
-;; add 'elisp' folder and subfolders to load path
-(defun update-to-load-path (folder)
-  "Update FOLDER and its subdirectories to `load-path'."
-  (let ((base folder))
-    (unless (member base load-path)
-      (add-to-list 'load-path base))
-    (dolist (f (directory-files base))
-      (let ((name (concat base "/" f)))
-        (when (and (file-directory-p name)
-                   (not (equal f ".."))
-                   (not (equal f ".")))
-          (unless (member base load-path)
-            (add-to-list 'load-path name)))))))
+;; load "elisp" and "site-lisp" folders (credits goes to Centaur Emacs)
+(defun update-load-path (&rest _)
+  "Update `load-path'."
+  (dolist (dir '("site-lisp" "elisp"))
+    (push (expand-file-name dir user-emacs-directory) load-path)))
 
-(update-to-load-path (expand-file-name "elisp" user-emacs-directory))
+(defun add-subdirs-to-load-path (&rest _)
+  "Add subdirectories to `load-path'."
+  (let ((default-directory (expand-file-name "site-lisp" user-emacs-directory)))
+    (normal-top-level-add-subdirs-to-load-path))) 
 
-;; load elisp scripts
+(advice-add #'package-initialize :after #'update-load-path)
+(advice-add #'package-initialize :after #'add-subdirs-to-load-path) 
 
-(require 'init-paths)
+(update-load-path)
+
+(require 'init-consts)
+
