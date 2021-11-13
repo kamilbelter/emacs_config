@@ -18,3 +18,8 @@
 
 (require 'init-consts)
 
+(require 'init-gc)
+
+(require 'init-paths)
+
+(require 'init-pckg-mgr)
