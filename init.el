@@ -23,3 +23,5 @@
 (require 'init-paths)
 
 (require 'init-pckg-mgr)
+
+(require 'init-global-config)
