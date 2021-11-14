@@ -25,3 +25,7 @@
 (require 'init-pckg-mgr)
 
 (require 'init-global-config)
+
+(require 'init-avy)
+
+(require 'init-ace-window)
