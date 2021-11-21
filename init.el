@@ -29,3 +29,15 @@
 (require 'init-avy)
 
 (require 'init-ace-window)
+
+(require 'init-search)
+
+(require 'init-magit)
+
+(require 'init-lsp)
+
+(require 'init-theme)
+
+(require 'init-ui)
+
+(require 'init-smartparens)
