@@ -41,3 +41,5 @@
 (require 'init-ui)
 
 (require 'init-smartparens)
+
+(require 'init-ispell)
