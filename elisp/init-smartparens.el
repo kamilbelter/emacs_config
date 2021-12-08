@@ -2,13 +2,7 @@
 
 (use-package smartparens
   :straight t
-  :defer 1
-  :hook ((
-          emacs-lisp-mode lisp-mode lisp-data-mode clojure-mode cider-repl-mode hy-mode
-          prolog-mode go-mode cc-mode python-mode
-          typescript-mode json-mode javascript-mode java-mode
-          ) . smartparens-strict-mode)
-  ;; :hook (prog-mode . smartparens-strict-mode)
+  :hook (emacs-lisp-mode lisp-mode lisp-data-mode go-mode cc-mode python-mode)
   :bind (:map smartparens-mode-map
          ;; This is the paredit mode map minus a few key bindings
          ;; that I use in other modes (e.g. M-?)
@@ -18,7 +12,6 @@
          ("C-M-d" . sp-down-sexp)
          ("C-M-p" . sp-backward-down-sexp)
          ("C-M-n" . sp-up-sexp)
-         ("C-w" . whole-line-or-region-sp-kill-region)
          ("M-s" . sp-splice-sexp) ;; depth-changing commands
          ("M-r" . sp-splice-sexp-killing-around)
          ("M-(" . sp-wrap-round)
