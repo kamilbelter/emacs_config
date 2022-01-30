@@ -1,4 +1,3 @@
 # emacs_config
-Private emacs settings
 
-Configured for Windows
+My emacs settings.
