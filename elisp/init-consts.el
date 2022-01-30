@@ -1,7 +1,7 @@
 ;;; init-consts.el --- -*- lexical-binding: t -*-
 
-(setq user-full-name "Kamil Belter")
-(setq user-mail-address "kamil.belter@gmail.com")
+(setq user-full-name "username")
+(setq user-mail-address "username@mail.com")
 
 (defvar custom-gc-cons-threshold (if (display-graphic-p) 64000000 1600000)
   "The default value to use for `gc-cons-threshold'. If you experience freezing,
