@@ -45,3 +45,5 @@
 (require 'init-smartparens)
 
 (require 'init-ispell)
+
+(require 'init-rust)
