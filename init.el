@@ -18,6 +18,8 @@
 
 (require 'init-consts)
 
+(require 'init-functions)
+
 (require 'init-gc)
 
 (require 'init-paths)
