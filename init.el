@@ -26,7 +26,7 @@
 
 (require 'init-pckg-mgr)
 
-(require 'init-global-config)
+(require 'init-core)
 
 (require 'init-avy)
 

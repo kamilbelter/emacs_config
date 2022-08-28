@@ -1,4 +1,4 @@
-;;; init-global-config.el --- -*- lexical-binding: t -*-
+;;; init-core.el --- -*- lexical-binding: t -*-
 
 ;; unbind unwanted key settings
 (global-set-key (kbd "C-z") nil)
@@ -57,4 +57,4 @@
   (add-hook 'window-setup-hook #'fix-fullscreen-cocoa)
   (bind-keys ("C-<f11>" . toggle-frame-fullscreen)))
 
-(provide 'init-global-config)
+(provide 'init-core)
