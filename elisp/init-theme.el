@@ -1,8 +1,8 @@
 ;;; init-theme.el --- -*- lexical-binding: t -*-
 
-(use-package ample-theme
+(use-package solarized-theme
   :straight t
   :config
-  (load-theme 'ample t))
+  (load-theme 'solarized-dark t))
 
 (provide 'init-theme)
