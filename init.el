@@ -28,11 +28,13 @@
 
 (require 'init-core)
 
+(require 'init-winner)
+
 (require 'init-avy)
 
 (require 'init-ace-window)
 
-(require 'init-search)
+;(require 'init-search)
 
 (require 'init-magit)
 
@@ -47,3 +49,4 @@
 (require 'init-ispell)
 
 (require 'init-rust)
+
