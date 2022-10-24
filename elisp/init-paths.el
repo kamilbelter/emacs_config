@@ -3,8 +3,7 @@
 (setq exec-path (append '("C:/Program Files/Git/bin/"
                           "C:/Program Files/Git/mingw64/bin/"
                           "c:/Program Files/Git/usr/bin/"
-                          "C:/ProgramData/chocolatey/bin/"
-			  "C:/apps/jdk-16.0.2/bin" ) exec-path))
+                          "C:/ProgramData/chocolatey/bin/" ) exec-path))
 
 ;; make sure Unix tools in from of 'exec-path'
 (let ((bash (executable-find "bash")))
