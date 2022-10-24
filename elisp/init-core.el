@@ -32,8 +32,17 @@
 ;; When buffer is closed, saves the cursor location
 (save-place-mode 1)
 
+;; Sentence ends with single space
+(setq sentence-end-double-space nil)
+
 ;; Set history-length longer
 (setq-default history-length 500)
+;; History settings
+(setq history-delete-duplicates t)
+(setq savehist-save-minibuffer-history 1)
+
+;; show time
+(display-time-mode 1)
 
 ;; Move the backup fies to user-emacs-directory/.backup
 (setq backup-directory-alist `(("." . ,(expand-file-name ".backup" user-emacs-directory))))
@@ -59,7 +68,6 @@
 (setq x-stretch-cursor nil)
 
 ;; Compilation settings
-
 (setq-default compilation-always-kill t) ; kill compilation process before starting another
 (setq-default compilation-ask-about-save nil) ; save all buffers on 'compile'
 (setq-default compilation-scroll-output t)
@@ -99,5 +107,19 @@
 
 (add-hook 'text-mode-hook 'turn-on-visual-line-mode)
 (setq visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
+
+;; disable compilation warning at start; TODO
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(warning-suppress-types '((comp))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
 (provide 'init-core)
