@@ -34,7 +34,7 @@
 
 (require 'init-ace-window)
 
-;(require 'init-search)
+(require 'init-selectrum)
 
 (require 'init-magit)
 
