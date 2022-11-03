@@ -50,3 +50,4 @@
 
 (require 'init-rust)
 
+(require 'init-tramp)
