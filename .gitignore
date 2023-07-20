@@ -1,0 +1,8 @@
+auto-save-list/
+.backup/
+straight/
+org-persist/
+eln-cache
+history
+places
+recentf
