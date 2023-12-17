@@ -5,4 +5,4 @@
   :after org
   :hook (org-mode . org-modern-mode))
 
-(provide 'org-orgmode)
+(provide 'init-orgmode)
