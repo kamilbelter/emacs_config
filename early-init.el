@@ -4,13 +4,13 @@
 ;; - init.el is loaded
 ;; - UI initialization
 
-;; To avoid garbage collection kick-in during startup
+;; delay garbage collection in startup
 (setq gc-cons-threshold most-positive-fixnum)
 
-;; required for manual package initialization
+;; setting required for manual package initialization
 (setq package-enable-at-startup nil)
 
-;; Inhibit resizing frame
+;; inhibit resizing frame
 (setq frame-inhibit-implied-resize t)
 
 ;; file hanlders are not needed during startup
