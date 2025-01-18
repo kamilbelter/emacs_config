@@ -7,7 +7,7 @@
 ;; delay garbage collection in startup
 (setq gc-cons-threshold most-positive-fixnum)
 
-;; setting required for manual package initialization
+;; setting required for manual package initialization (straight)
 (setq package-enable-at-startup nil)
 
 ;; inhibit resizing frame
