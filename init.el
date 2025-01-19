@@ -22,9 +22,7 @@
 
 (require 'init-gc)
 
-(require 'init-paths)
-
-(require 'init-pckg-mgr)
+(require 'init-straight)
 
 (require 'init-core)
 
