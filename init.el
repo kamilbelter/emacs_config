@@ -26,33 +26,37 @@
 
 (require 'init-core)
 
-(require 'init-winner)
-
-(require 'init-avy)
-
-(require 'init-ace-window)
-
-(require 'init-selectrum)
-
 (require 'init-magit)
 
-(require 'init-lsp)
+(require 'init-orgmode)
 
-(require 'init-theme)
+(require 'init-orgroam)
 
-(require 'init-ui)
+;(require 'init-winner)
+
+;(require 'init-avy)
+
+;(require 'init-ace-window)
+
+;(require 'init-selectrum)
+
+;(require 'init-lsp)
+
+;(require 'init-theme)
+
+;(require 'init-ui)
 
 ;; there are problems with this package in emacs-gcc
 ;(require 'init-smartparens)
 
-(require 'init-ispell)
+;(require 'init-ispell)
 
-(require 'init-rust)
+;(require 'init-rust)
 
-(require 'init-tramp)
+;(require 'init-tramp)
 
-(require 'init-projectile)
+;(require 'init-projectile)
 
-(require 'init-modeline)
+;(require 'init-modeline)
 
-(require 'init-orgmode)
+
