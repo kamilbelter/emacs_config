@@ -16,7 +16,10 @@
 
 (use-package org-modern
   :straight t
-  :after org
-  :hook (org-mode . org-modern-mode))
+  :custom
+  (org-modern-star 'replace)
+  (org-modern-checkbox nil)
+  (org-modern-table nil)
+  :hook (org-mode . global-org-modern-mode))
 
 (provide 'init-orgmode)
