@@ -1,7 +1,7 @@
 ;;; init-ui.el --- -*- lexical-binding: t -*-
 
 ;; font
-(set-frame-font "Roboto Mono")
+(set-frame-font "DejaVu Sans Mono")
 
 ;; highlight the current line
 (global-hl-line-mode +1)
