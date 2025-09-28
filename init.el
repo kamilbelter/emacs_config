@@ -32,7 +32,7 @@
 
 (require 'init-orgroam)
 
-;(require 'init-winner)
+(require 'init-winner)
 
 ;(require 'init-avy)
 
@@ -42,9 +42,9 @@
 
 ;(require 'init-lsp)
 
-;(require 'init-theme)
+(require 'init-theme)
 
-;(require 'init-ui)
+(require 'init-ui)
 
 ;; there are problems with this package in emacs-gcc
 ;(require 'init-smartparens)
