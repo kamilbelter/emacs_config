@@ -4,6 +4,10 @@
 ;; - init.el is loaded
 ;; - UI initialization
 
+;; disable native compilation
+(setq native-comp-deferred-compilation nil
+comp-enable-subr-trampolines nil)
+
 ;; delay garbage collection in startup
 (setq gc-cons-threshold most-positive-fixnum)
 
