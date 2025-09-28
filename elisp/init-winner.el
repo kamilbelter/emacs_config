@@ -2,6 +2,6 @@
 
 (use-package winner
   :straight t
-  :config (winner-mode 1))
+  :config (winner-mode t))
 
 (provide 'init-winner)
