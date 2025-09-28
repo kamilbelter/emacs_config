@@ -2,8 +2,8 @@
 
 (use-package catppuccin-theme
   :straight t
-  :config
+  :init
   (setq catppuccin-flavor 'frappe)
-  (load-theme 'catppuccin))
+  :hook (after-init . (lambda () (load-theme 'catppuccin))))
 
 (provide 'init-theme)
