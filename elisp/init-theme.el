@@ -1,8 +1,9 @@
 ;;; init-theme.el --- -*- lexical-binding: t -*-
 
-(use-package solarized-theme
+(use-package catppuccin-theme
   :straight t
   :config
-  (load-theme 'solarized-dark t))
+  (setq catppuccin-flavor 'frappe)
+  (load-theme 'catppuccin))
 
 (provide 'init-theme)
